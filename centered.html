@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Masonry &amp Foundation 4</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/foundation.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="js/modernizr-transitions.js"></script>
+</head>
+
+
+<body>
+
+	<div class="row">
+		<div class="large-12 columns">
+			<h2>Masonry &amp; Foundation 4</h2>
+			<hr />
+		</div>
+	</div>
+    
+    <div class="row">
+			<div id="container" class="large-12 columns transitions-enabled large-centered clearfix">
+               	<div class="box col2"><img src="http://www.placehold.it/225x140" /></div>
+               	<div class="box col2"><img src="http://www.placehold.it/210x160" /></div>
+               	<div class="box col2"><img src="http://www.placehold.it/310x280" /></div>
+               	<div class="box col2"><img src="http://www.placehold.it/200x115" /></div>
+               	<div class="box col2"><img src="http://www.placehold.it/200x150" /></div>
+               	<div class="box col2"><img src="http://www.placehold.it/200x130" /></div>
+               	<div class="box col2"><img src="http://www.placehold.it/200x350" /></div>
+               	<div class="box col2"><img src="http://www.placehold.it/200x130" /></div>
+               	<div class="box col2"><img src="http://www.placehold.it/200x130" /></div>
+               	<div class="box col2"><img src="http://www.placehold.it/200x170" /></div>
+               	<div class="box col2"><img src="http://www.placehold.it/200x140" /></div>
+               	<div class="box col2"><img src="http://www.placehold.it/200x110" /></div>
+               	<div class="box col2"><img src="http://www.placehold.it/200x300" /></div>
+               	<div class="box col2"><img src="http://www.placehold.it/200x130" /></div>
+               	<div class="box col2"><img src="http://www.placehold.it/200x180" /></div>
+               	<div class="box col2"><img src="http://www.placehold.it/300x140" /></div>
+               	<div class="box col2"><img src="http://www.placehold.it/260x180" /></div>
+               	<div class="box col2"><img src="http://www.placehold.it/200x135" /></div>
+               	<div class="box col2"><img src="http://www.placehold.it/240x110" /></div>
+               	<div class="box col2"><img src="http://www.placehold.it/200x180" /></div>
+               	<div class="box col2"><img src="http://www.placehold.it/200x150" /></div>
+				<div class="box col2"><img src="http://www.placehold.it/200x120" /></div>
+			</div><!--/container -->  
+    </div>
+    
+    
+    
+  <script>
+	  document.write('<script src=' + ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') + '.js><\/script>')
+  </script>
+  
+  <script src="js/foundation.min.js"></script>
+ 
+  <script>
+    $(document).foundation();
+  </script>    
+<script src="js/jquery-1.7.1.min.js"></script>
+<script src="js/jquery.masonry.js"></script>
+<script>
+	var $containter = $('#container');
+	$containter.imagesLoaded( function(){
+		$containter.masonry({
+			itemSelector: '.box',
+        	isAnimated: !Modernizr.csstransitions,
+        	isFitWidth: true
+		});	
+	});
+</script>
+</body>
+</html>
