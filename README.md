@@ -1,7 +1,7 @@
 ZurbFoundationMasonry
 =====================
 
-This is a super rudimentary example of implementing Zurb's Foundation 4.0.4 (most recent at publish date) with jQuery Masonry.
+This is a super rudimentary example of implementing Zurb's Foundation 5 (most recent at publish date) with jQuery Masonry.
 
 Unfortunately since masonry is being used we must ignore the resizing of images for a hard-px based measurement. This is set up similarly where as the container shrinks in size the images will not resize but the columns will rearrange to accomidate, the new container will then center itself accordingly to avoid ugly margin issues on the right side of a column where images are missing. This is the best solution for integrating a masonry into a responsive framework (see pinterest site).
 
