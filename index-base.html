@@ -6,27 +6,24 @@
     <title>Foundation 5 | Welcome</title>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/foundation.min.css" />
-  	<link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <script src="js/vendor/modernizr.js"></script>
-  </head>
- 
+</head>
  
  
  
  
 <body>
-    
-    
-    
+  
     <div class="row">
-		<div class="large-12 columns">
-			<h2>Masonry &amp; Foundation 5</h2>
-			<hr />
-		</div>
+	<div class="large-12 columns">
+		<h2>Masonry &amp; Foundation 5</h2>
+		<hr />
 	</div>
+    </div>
     
     <div class="row">
-			<div id="container" class="large-12 columns transitions-enabled large-centered clearfix">
+		<div id="container" class="large-12 columns transitions-enabled large-centered clearfix">
                	<div class="box col2"><img src="http://www.placehold.it/225x140" /></div>
                	<div class="box col2"><img src="http://www.placehold.it/210x160" /></div>
                	<div class="box col2"><img src="http://www.placehold.it/310x280" /></div>
@@ -48,28 +45,28 @@
                	<div class="box col2"><img src="http://www.placehold.it/240x110" /></div>
                	<div class="box col2"><img src="http://www.placehold.it/200x180" /></div>
                	<div class="box col2"><img src="http://www.placehold.it/200x150" /></div>
-				<div class="box col2"><img src="http://www.placehold.it/200x120" /></div>
-			</div><!--/container -->  
+		<div class="box col2"><img src="http://www.placehold.it/200x120" /></div>
+	</div><!--/container -->  
     </div>
 
     
     
         
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/foundation.min.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
-    <script src="js/jquery.masonry.js"></script>
-	<script>
-		var $containter = $('#container');
-		$containter.imagesLoaded( function(){
-			$containter.masonry({
-				itemSelector: '.box',
-	        	isAnimated: !Modernizr.csstransitions,
-	        	isFitWidth: true
-			});	
-		});
-	</script>
-  </body>
+<script src="js/vendor/jquery.js"></script>
+<script src="js/foundation.min.js"></script>
+<script>
+  $(document).foundation();
+</script>
+<script src="js/jquery.masonry.js"></script>
+<script>
+    var $containter = $('#container');
+    $containter.imagesLoaded( function(){
+        $containter.masonry({
+          itemSelector: '.box',
+          isAnimated: !Modernizr.csstransitions,
+          isFitWidth: true
+     });	
+});
+</script>
+</body>
 </html>
