@@ -1,4 +1,4 @@
-Zurb's Foundation + Masonry
+(DEPRECIATED) Zurb's Foundation + Masonry
 =====================
 
 This is my example of implementing Zurb's Foundation 5 (most recent at publish date) with jQuery Masonry.
